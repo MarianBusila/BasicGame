@@ -12,6 +12,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b1f2863694fe7f46ab8845321cec15a, type: 3}
   m_Name: ProductPackagesDatastore
   m_EditorClassIdentifier: 
-  _unityCloudProjectName: 
-  _productPackages: []
-  _lastSyncTime: 
+  _unityCloudProjectName: UntitledCatGame
+  _productPackages:
+  - id: 1214f2fd-28a6-45be-acdf-d057d706be52
+    name: Toothbrushes
+    status: Active
+    isDynamic: 0
+    isFallbackEnabled: 0
+    products: []
+  - id: 69e66a40-cb43-4f53-b2b6-543ca4723ca7
+    name: Cat Toys
+    status: Active
+    isDynamic: 0
+    isFallbackEnabled: 0
+    products: []
+  _lastSyncTime: 02/26/2026 13:03:37

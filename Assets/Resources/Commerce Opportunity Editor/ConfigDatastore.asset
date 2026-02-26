@@ -16,10 +16,22 @@ MonoBehaviour:
     _defaultSortOrder: 1000
   _config:
     organizationConfiguration:
-      id: 0
-      status: 
-    isProjectRegistered: 0
-    projectId: 
+      id: 2475913625345
+      status: Active
+    isProjectRegistered: 1
+    projectId: b4ace942-2c18-4588-9769-7c7a358f2f48
     isFallbackEnabled: 0
-    fallbackOptions: []
-    subAffiliateProjectConfigurations: []
+    fallbackOptions:
+    - vendor: Walmart
+      products: []
+    subAffiliateProjectConfigurations:
+    - affiliateId: c764f1b1-ed27-4230-a697-0770cc396c42
+      subAffiliateProjectId: 2dd9c0be-fc6a-49a3-80ac-82f6f17639af
+      subAffiliateId: 86837792-996e-40cd-9d33-6f2945486da3
+      externalSubAffiliateId: 002f2f11-ea9a-42cf-9fd0-1f223258b5dc
+      vendorId: 0fa4e017-dfc2-450e-9113-12b969e7f06a
+      vendorName: Walmart
+      titleId: 49f569db-ba8a-40cd-bc05-30525c7e8046
+      callback: ob4ace9422c18458897697c7a358f2f48://immersive-commerce
+      paymentProfile:
+        status: Validated

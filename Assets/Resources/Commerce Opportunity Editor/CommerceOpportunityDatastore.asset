@@ -17,8 +17,8 @@ MonoBehaviour:
   _commerceOpportunities:
   - _id: ba169cf2-44ca-4c90-b14a-12cb203f5276
     _styleTemplateId: aab66862-30bf-45b4-bf76-7c7b94e3518b
-    _productPackageId: 
-    _displayName: Commerce Opportunity
+    _productPackageId: 1214f2fd-28a6-45be-acdf-d057d706be52
+    _displayName: My ComOp 01
   _styleTemplates:
   - _displayName: Style
     _id: aab66862-30bf-45b4-bf76-7c7b94e3518b
