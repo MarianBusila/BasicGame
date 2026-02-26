@@ -182,7 +182,18 @@ The SDK uses Addressables to load its UI screens, themes, fonts, and runtime env
 
 7\. Right-click the now-empty `Walmart Group` and delete it
 
-8\. In the Addressables Groups window toolbar, go to \*\*Build > New Build > Default Build Script\*\*
+8\. In the top menu bar of the window, go to Tools > Labels (or click the Labels button)
+  3. Add these labels one by one:
+    - runtimeEnv
+    - image
+    - theme
+    - screen
+    - font
+    - toast
+    - misc
+    - panelsetting
+
+9\. In the Addressables Groups window toolbar, go to \*\*Build > New Build > Default Build Script\*\*
 
 
 

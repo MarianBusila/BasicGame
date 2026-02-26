@@ -15,7 +15,7 @@ MonoBehaviour:
   m_DefaultGroup: 462c821514d439c418627f6bd52d7a93
   m_currentHash:
     serializedVersion: 2
-    Hash: 87d7feb82230a8f0d052f824496c29b3
+    Hash: ecc2115afc5af6d1123c47123e8d00ac
   m_OptimizeCatalogSize: 0
   m_BuildRemoteCatalog: 0
   m_BundleLocalCatalog: 0
@@ -89,6 +89,14 @@ MonoBehaviour:
   m_LabelTable:
     m_LabelNames:
     - default
+    - runtimeEnv
+    - image
+    - theme
+    - screen
+    - font
+    - toast
+    - misc
+    - panelsetting
   m_SchemaTemplates: []
   m_GroupTemplateObjects:
   - {fileID: 11400000, guid: dbc8cf4f857204b42ae294024a5337c1, type: 2}
