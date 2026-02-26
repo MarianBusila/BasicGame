@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4f00ccfc604acd4c96f285e84dd67f6, type: 3}
   m_Name: ARSConfiguration
   m_EditorClassIdentifier: 
-  _baseUrl: 
+  _baseUrl: https://cloud-code.services.api.unity.com/v1/projects/
   _relayServiceData:
     Headers: []
