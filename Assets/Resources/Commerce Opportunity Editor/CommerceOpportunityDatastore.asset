@@ -14,8 +14,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _organizationId: 2475913625345
   _environmentId: 6b6c6f98-239b-4c9b-8616-57c05a4ffdc3
-  _commerceOpportunities: []
-  _styleTemplates: []
+  _commerceOpportunities:
+  - _id: ba169cf2-44ca-4c90-b14a-12cb203f5276
+    _styleTemplateId: aab66862-30bf-45b4-bf76-7c7b94e3518b
+    _productPackageId: 
+    _displayName: Commerce Opportunity
+  _styleTemplates:
+  - _displayName: Style
+    _id: aab66862-30bf-45b4-bf76-7c7b94e3518b
+    _orientation: 1
+    _deviceId: iPhone SE
+    _width: 0
+    _height: 0
+    _font: {fileID: 11400000, guid: 22c1521f9eef9ba429c3ae1d429b3bdd, type: 2}
+    _accentColor: {r: 0, g: 0.3254902, b: 0.8862745, a: 1}
+    _overlayBackgroundColor: {r: 0, g: 0, b: 0, a: 0.49803922}
+    _isDefault: 1
+    _isThemeLight: 1
   _packageData:
     _name: 
     _version: 
