@@ -851,10 +851,10 @@ PlayerSettings:
   apiCompatibilityLevel: 6
   activeInputHandler: 0
   windowsGamepadBackendHint: 0
-  cloudProjectId: 09e20691-9cfb-4943-96fd-01d54ff1984c
+  cloudProjectId: b4ace942-2c18-4588-9769-7c7a358f2f48
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: BasicGame 2026-02-26_10-59-43
+  projectName: UntitledCatGame
   organizationId: orca-demo
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
