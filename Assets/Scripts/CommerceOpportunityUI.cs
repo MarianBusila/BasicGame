@@ -41,6 +41,8 @@ public class CommerceOpportunityUI : MonoBehaviour
         {
             existingEventSystem.gameObject.AddComponent<StandaloneInputModule>();
         }
+        
+        int fontSize = 42;
 
         // Canvas
         var canvasGo = new GameObject("Canvas");
@@ -77,6 +79,7 @@ public class CommerceOpportunityUI : MonoBehaviour
         textGo.transform.SetParent(inputGo.transform, false);
         var text = textGo.AddComponent<Text>();
         text.font = Resources.GetBuiltinResource<Font>("LegacyRuntime.ttf");
+        text.fontSize = fontSize;
         text.color = Color.black;
         text.supportRichText = false;
         var textRect = textGo.GetComponent<RectTransform>();
@@ -89,9 +92,10 @@ public class CommerceOpportunityUI : MonoBehaviour
         placeholderGo.transform.SetParent(inputGo.transform, false);
         var placeholder = placeholderGo.AddComponent<Text>();
         placeholder.font = Resources.GetBuiltinResource<Font>("LegacyRuntime.ttf");
+        placeholder.fontSize = fontSize;
         placeholder.fontStyle = FontStyle.Italic;
         placeholder.color = new Color(0.5f, 0.5f, 0.5f);
-        placeholder.text = "Enter Commerce Opportunity name...";
+        placeholder.text = "My ComOp 01";
         var phRect = placeholderGo.GetComponent<RectTransform>();
         phRect.anchorMin = Vector2.zero;
         phRect.anchorMax = Vector2.one;
@@ -108,12 +112,13 @@ public class CommerceOpportunityUI : MonoBehaviour
         var btnImage = buttonGo.AddComponent<Image>();
         btnImage.color = new Color(0.2f, 0.6f, 1f);
         var btnLayout = buttonGo.AddComponent<LayoutElement>();
-        btnLayout.minWidth = 100;
+        btnLayout.minWidth = 120;
 
         var btnTextGo = new GameObject("Text");
         btnTextGo.transform.SetParent(buttonGo.transform, false);
         var btnText = btnTextGo.AddComponent<Text>();
         btnText.font = Resources.GetBuiltinResource<Font>("LegacyRuntime.ttf");
+        btnText.fontSize = fontSize;
         btnText.text = "Show";
         btnText.color = Color.white;
         btnText.alignment = TextAnchor.MiddleCenter;
@@ -131,8 +136,8 @@ public class CommerceOpportunityUI : MonoBehaviour
         statusGo.transform.SetParent(canvasGo.transform, false);
         _statusText = statusGo.AddComponent<Text>();
         _statusText.font = Resources.GetBuiltinResource<Font>("LegacyRuntime.ttf");
+        _statusText.fontSize = fontSize;
         _statusText.color = Color.white;
-        _statusText.fontSize = 14;
         _statusText.alignment = TextAnchor.UpperLeft;
         var statusRect = statusGo.GetComponent<RectTransform>();
         statusRect.anchorMin = new Vector2(0.1f, 0.75f);
