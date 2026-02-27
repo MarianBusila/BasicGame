@@ -4,6 +4,7 @@ using Unity.Commerce.Backend;
 using Unity.Commerce.CommerceOpportunity;
 using Unity.Services.Authentication;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 using Walmart.Commerce.Sdk;
 
@@ -28,6 +29,19 @@ public class CommerceOpportunityUI : MonoBehaviour
 
     private void CreateUI()
     {
+        // EventSystem (required for UI input)
+        var existingEventSystem = FindObjectOfType<EventSystem>();
+        if (existingEventSystem == null)
+        {
+            var eventSystemGo = new GameObject("EventSystem");
+            eventSystemGo.AddComponent<EventSystem>();
+            eventSystemGo.AddComponent<StandaloneInputModule>();
+        }
+        else if (existingEventSystem.GetComponent<StandaloneInputModule>() == null)
+        {
+            existingEventSystem.gameObject.AddComponent<StandaloneInputModule>();
+        }
+
         // Canvas
         var canvasGo = new GameObject("Canvas");
         canvasGo.transform.SetParent(transform);
