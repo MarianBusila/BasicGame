@@ -14,4 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _baseUrl: https://cloud-code.services.api.unity.com/v1/projects/
   _relayServiceData:
-    Headers: []
+    Headers:
+    - HeaderKey: Content-Type
+      HeaderValue: application/json
+    - HeaderKey: Accept
+      HeaderValue: application/json

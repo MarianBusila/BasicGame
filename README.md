@@ -95,7 +95,9 @@ This is required for Walmart account linking and checkout, but **not** for viewi
 
 1. Select `Assets/Resources/Unity Immersive Commerce/ARSConfiguration` in the Project window
 
-2. In the Inspector, set: **Base Url** — `https://cloud-code.services.api.unity.com/v1/projects/`
+2. In the Inspector, set: 
+    - **Base Url** : `https://cloud-code.services.api.unity.com/v1/projects/`
+    - **Relay Service Data** : add headers **Content-Type** and **Accept**, both with value : **application/json**
 
 ---
 
