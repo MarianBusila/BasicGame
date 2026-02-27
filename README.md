@@ -468,6 +468,34 @@ public class CommerceOpportunityUI : MonoBehaviour
 
 ---
 
+## Step 13: Set DeepLink (Android)
+
+1. Create AndroidManifest.xml file in Assets/Pugins/Android with the following content. Note the settings for the deep link that were obtained from the Assets/Resources/Commerce Opportunity Editor/Config DataStore -> Config/Organization Configuration/Subaffiliate Project Configurations/ID/Callback
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.unity3d.player"
+    xmlns:tools="http://schemas.android.com/tools">
+    <application>
+        <activity android:name="com.unity3d.player.UnityPlayerActivity"
+                  android:theme="@style/UnityThemeSelector">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+			<intent-filter>
+			  <action android:name="android.intent.action.VIEW" />
+			  <category android:name="android.intent.category.DEFAULT" />
+			  <category android:name="android.intent.category.BROWSABLE" />
+			  <data android:scheme="ob4ace9422c18458897697c7a358f2f48" android:host="immersive-commerce" />
+			</intent-filter>			
+            <meta-data android:name="unityplayer.UnityActivity" android:value="true" />
+        </activity>
+    </application>
+</manifest>
+```
+
 ## Verification
 
 1. Enter **Play Mode** (for best results, open **Window > General > Device Simulator** first)
